@@ -44,6 +44,7 @@ class MyWidget extends StatefulWidget {
 
 class _MyWidgetState extends State<MyWidget> {
 
+
   List<Country> countrylist = [];
   String gdanskPic = "https://www.google.com/maps/vt/data=KGhGc3xm-9o8RaKAGvlNJiyM4o8I7GviViL4tClRwqA2CcxS-lBgqjm1Xfat8modN076rC_RjIRY3gx5MXkWQyEZH_-Ymp9tdPPP7KUw5HsDM24ASsBqc4F107lpfMIeKYax6tzRnHREKqIRkzk_l6ntofXXB3ukjtrQLRjanuP671qBCN6N8y12CQAbp1STM2Qp3XAX2hVO1Ij_Ir-ZADq1TtPfw0ghUDxWJet8GcwyOY2T7a2CjdU7";
   String warszawaPic = "https://www.google.com/maps/vt/data=f2piO1svX5H4KK6TRkFjeNG3kBUEmpGl6FIjT4zexDSsjl1UENc4h9qaUMm9sOY3mQWTJh4Z__4Ql036hHFmRCJDntx3R6YMWEom6ZN7ngTBzORb7_O2LiMmN_ygmqgQXdMpkVeOGRga03VJqHVrl565jeGcEWB1EBQqRCMLvP_FGdKMyO1hToKp9LZBNhZ8nVxH0eMFOTyLxOFjManFNmLvKSZv4617ts7irGiCAYMEE9chD3S1Qhso";
@@ -130,6 +131,11 @@ class _MyWidgetState extends State<MyWidget> {
             );
           },
         ));
+  }
+
+  @override
+  void initState() {
+    randomCity();
   }
 }
 
