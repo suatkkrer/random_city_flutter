@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CountryDetails extends StatelessWidget {
-  String countryName = "";
-  int appBarColor = 0;
-  String date = "";
-  String image = "";
+
+  String countryName;
+  int appBarColor;
+  String date;
+  String image;
 
   CountryDetails(
       {Key key, this.countryName, this.appBarColor, this.date, this.image})
